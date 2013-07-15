@@ -29,6 +29,8 @@
 # include  <ostream>
 # include  <fstream>
 # include  <inttypes.h>
+#include <Foundation/NSString.h>  // for "unknown type name 'NSString'"
+
 class QTreeWidgetItem;
 
 class CameraControl {

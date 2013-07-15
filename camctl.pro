@@ -32,7 +32,8 @@ HEADERS += camtool/CameraControl.h \
            LibRaw-0.8.4/libraw/libraw_types.h \
            LibRaw-0.8.4/libraw/libraw_version.h \
            scripts/macdeployqt/shared.h \
-           /Library/Frameworks/QtGui.framework/Headers/qapplication.h
+           /Library/Frameworks/QtGui.framework/Headers/qapplication.h \
+    camtool/ui_camtool.h
 FORMS += camtool/aboutbox.ui \
          camtool/aboutdevice.ui \
          camtool/camtool.ui \

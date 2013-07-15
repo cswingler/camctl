@@ -28,7 +28,8 @@
 
 # include  "CameraControl.h"
 # include  "PTPCamera.h"
-# include  <ImageCapture/ICAApplication.h>
+//# include  <ImageCapture/ICAApplication.h> // deprecated in 10.7
+#include <ImageCaptureCore/ImageCaptureCore.h>
 # include  <QString>
 # include  <map>
 # include  <vector>

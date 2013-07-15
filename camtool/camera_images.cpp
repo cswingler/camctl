@@ -24,6 +24,8 @@
 # include  <QFileDialog>
 # include  <QMessageBox>
 # include  <iostream>
+# include  <assert.h>
+#include <cstdio>
 
 using namespace std;
 
@@ -139,7 +141,7 @@ void CamtoolMain::write_tethered_image_(const QString&file_name,
       }
 
 	// Create the file and write the image data.
-      FILE*fd = fopen(path.toAscii(), "wb");
+      FILE*fd = fopen(path.toStdString().c_str(), "wb");
       if (fd == 0) {
 	    QMessageBox::information(this, tr("Write Error"),
 			     tr("Unable to open output file for write: ") + path);
@@ -237,7 +239,7 @@ void CamtoolMain::images_list_slot_(QListWidgetItem*item)
 	    selected_camera_->get_image_data(file_index.toInt(), image_data,
 					     delete_flag);
 
-	    FILE*fd = fopen(path.toAscii(), "wb");
+        FILE*fd = fopen(path.toStdString().c_str(), "wb");
 	    assert(fd);
 	    fwrite(image_data.constData(), 1, image_data.size(), fd);
 	    fclose(fd);
