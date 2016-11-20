@@ -1,0 +1,6 @@
+I haven't got this to compile yet, but here's some notes:
+
+This depends on ICADevices.framework, and the project doesn't seem to be 
+set up properly for inclusion.
+
+You'll need to install the Qt 5.0.2 framework. 
