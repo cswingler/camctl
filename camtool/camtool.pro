@@ -35,4 +35,5 @@ SOURCES += LibRawQt.cpp
 
 # The Mac ICA implementation of CameraControl
 HEADERS += MacICACameraControl.h
-SOURCES += MacICACameraControl.cpp MacICA_inventory.cpp MacICA_events.cpp MacICA_misc.mm MacICA_debug.cpp MacICABlacklist.cpp MacPTPCameraControl.cpp
+OBJECTIVE_SOURCES = MacICA_misc.mm
+SOURCES += MacICACameraControl.cpp MacICA_inventory.cpp MacICA_events.cpp MacICA_debug.cpp MacICABlacklist.cpp MacPTPCameraControl.cpp
